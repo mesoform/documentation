@@ -18,6 +18,7 @@
   * description of how to test
     * strategic testing documented on README or wiki
     * tactical testing documented on PR
+  * Not so submit PRs which will take the reviewer more than an hour to review. Break it up, if necessary.
 * Reviewers should be
   * checking IDE plugin validations
   * asking in-line questions
