@@ -1,6 +1,7 @@
 ## Contributing
-* use 4 character indents
+* use 2 character indents where the language standards don't dictate anything
 * Follow conventions for the given language you're righting in. For example, PEP for python, which mean (but not limited to):
+  * 4 space indents (IDEs can usually be configured to make tabs use spaces)
   * global variables and constants in all capitals
   * global variables and constants declared at the beginning of the file wherever possible
   * local variables in all lowercase
