@@ -18,7 +18,8 @@
   * description of how to test
     * strategic testing documented on README or wiki
     * tactical testing documented on PR
-  * Not so submit PRs which will take the reviewer more than an hour to review. Break it up, if necessary.
+  * Don't submit huge PRs. Break it up, if necessary. If large changes need to merge to a release branch together, create a new temporary base branch first and create small PRs into that one first
+  * Don't submit PRs with large format changes (i.e. automated corrections by an IDE) along with functional changes because it makes the PR diff hard to understand. Submit the formatting on a separate PR.
 * Reviewers should be
   * checking IDE plugin validations
   * asking in-line questions
