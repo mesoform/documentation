@@ -12,6 +12,10 @@
 * install a suitable IDE formatting plugin and run it before pushing changes. I.e. On Jetbrains IDEs
  there is Shell Script Formatter which should have be ran (with CTRL+ALT+L or CMD+OPT+L) on each
  script
+* branches should use the prefix format label/ticket_ref/description, where label is one of:
+  * bug/ - any changes which fix a problem that has been identified in live code
+  * feat/ - any changes which are introducing something new
+  * patch/ - any changes which are BAU, like refactoring, optimising or configuration changes
 * PR Authors needs to ensure the reviewer has everything needed to review. I.e.
   * description of the changes
   * in-line comments of complex algorithms
@@ -20,6 +24,9 @@
     * tactical testing documented on PR
   * Don't submit huge PRs. Break it up, if necessary. If large changes need to merge to a release branch together, create a new temporary base branch first and create small PRs into that one first
   * Don't submit PRs with large format changes (i.e. automated corrections by an IDE) along with functional changes because it makes the PR diff hard to understand. Submit the formatting on a separate PR.
+* When merging branches follow the guidelines below for the merge strategy:
+  * when the head branch is feature branch use squash merge
+  * when the head is a release of long-lived branch use commit merge. This includes temporary base (or story) branches. The simple test here is whether the commits on the head branch are all previously squash merges
 * Reviewers should be
   * checking IDE plugin validations
   * asking in-line questions
